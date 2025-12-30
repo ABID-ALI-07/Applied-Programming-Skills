@@ -5,7 +5,6 @@ class Solution {
         int left = 0;
         int right = n - 1;
         for (int i = n - 1; i >= 0; i--) {
-            // Compare absolute values to find which square will be larger
             if (Math.abs(nums[left]) > Math.abs(nums[right])) {
                 result[i] = nums[left] * nums[left];
                 left++;
